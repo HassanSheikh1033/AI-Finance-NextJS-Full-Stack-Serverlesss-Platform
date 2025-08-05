@@ -57,7 +57,7 @@ const Header = async () => {
             </a>
           </SignedIn>
           <SignedOut>
-            <SignInButton forceRedirectUrl="/dashboard">
+            <SignInButton forceRedirectUrl={`${process.env.NEXT_PUBLIC_VERCEL_URL}/dashboard`}>
               <Button variant="outline">Login</Button>
             </SignInButton>
           </SignedOut>
